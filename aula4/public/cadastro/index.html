@@ -16,11 +16,9 @@
   </nav>
   
   <main role="main">
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <a class="navbar-brand" href="#">
-        <!-- <img src="./imagens_extras/imagem1.png" style="width:30px; height:30px" class="d-inline-block align-top" alt="logo da aplicação"> -->
-        <!-- <img src="./imagens_extras/imagem1.png" class="d-inline-block align-top" alt="logo da aplicação">         -->
+        <img src="imagens/mao.png" style="width:30px; height:30px" class="d-inline-block align-top" alt="logo da aplicação">
       </a>
   
       <a class="navbar-brand" href="#">Responsum</a>
@@ -41,7 +39,7 @@
       <div class="container">
 
         <figure id="img" style="float: left">
-          <!-- <img src="\landinpage\imagens\mao.png" alt="imagem mao aberta"/> -->
+          <img src="imagens/mao.png" alt="imagem mao aberta"/>
         </figure>  
       
         <h1 align="left">Responsum</h1>
@@ -51,7 +49,7 @@
         Obtenha os feedbacks e avaliações, analise resultados.<br>
         Nunca mais se perca nas suas demandas.</p>
         <p>Simples assim...</p> 
-        <p><a class="btn btn-primary btn-lg" href="/landinpage/saibamais.html" role="button">Saiba mais &raquo;</a></p>
+        <p><a class="btn btn-primary btn-lg" href="saibamais.html" role="button">Saiba mais &raquo;</a></p>
         <!-- <p><a class="btn btn-primary btn-lg" href="#saibamais" role="button">Saiba mais &raquo;</a></p>         -->
       </div>
     </div>
@@ -62,7 +60,7 @@
 
           <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
             <h3 class="text-center">Facilidade</h3>
-            <!-- <img class="card-img-top" src="imagens/cadastrar.jpg" alt="Imagem de facilidade do card"> -->
+            <img class="card-img-top" src="imagens/cadastrar.jpg" alt="Imagem de facilidade do card">
             <div class="card-body">
               <p class="card-text">Mantenha o cadastro da sua equipe de atendentes de forma simples e objetiva. Conheça as capacidades de cada um. </p>
             </div>
@@ -72,7 +70,7 @@
 
           <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
             <h3 class="text-center">Simplicidade</h3>
-            <!-- <img class="card-img-top" src="imagens/simplicidade.png" alt="Imagem de simplicidade do card"> -->
+            <img class="card-img-top" src="imagens/simplicidade.png" alt="Imagem de simplicidade do card">
             <div class="card-body">
               <p class="card-text">Mantenha o cadastro da sua equipe de atendentes de forma simples e objetiva. Conheça as capacidades de cada um. </p>
             </div>
@@ -82,7 +80,7 @@
 
           <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
             <h3 class="text-center">Organização</h3>
-            <!-- <img class="card-img-top" src="imagens/businessman.jpg" alt="Imagem de organização do card"> -->
+            <img class="card-img-top" src="imagens/businessman.jpg" alt="Imagem de organização do card">
             <div class="card-body">
               <p class="card-text">Organize e direcione de forma simples e objetiva as demandas de atendimentos, direcione aos atendentes conforme a necessidade. Intereja de maneira simples.</p>
             </div>
@@ -92,7 +90,7 @@
 
           <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
             <h3 class="text-center">Resultados</h3>
-            <!-- <img class="card-img-top" src="imagens/grafico2.png" alt="Imagem de resultados do card"> -->
+            <img class="card-img-top" src="imagens/grafico2.png" alt="Imagem de resultados do card">
             <div class="card-body">
               <p class="card-text">Acompanhe cada atendimento, sua execução, necessidade de novas demandas, gere estatísticas e obtenha feedbacks. Ganhe tempo e seja objetivo.</p>
             </div>
@@ -104,20 +102,20 @@
           <div class="border border-info px-2 p-3 shadow p-3 mb-5 bg-white rounded">
             <h3>Comece a usar agora</h3>
             <br>
-            <form>
+            <form method='post' action='/cadastro'>
               <div class="form-group">
                 <label for="formGroupExampleInput">Nome</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nome">
+                <input type="text" name="nome" class="form-control" id="formGroupExampleInput" placeholder="Nome">
               </div>
               <div class="form-group">
                 <label for="formGroupExampleInput2">E-mail</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="email@email.com">
+                <input type="text" name="email" class="form-control" id="formGroupExampleInput2" placeholder="email@email.com">
               </div>
 
               <div>
                 <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
                 <label for="formGroupExampleInput">Como pretende usar?</label>
-                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <select name="tipouso" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                   <option selected>Escolher...</option>
                   <option value="1">Prestadores de Serviços em geral</option>
                   <option value="2">Entidades de Assistência socia</option>
@@ -128,7 +126,7 @@
 
               <div>
                 <br><br>
-                <button type="button" class="btn btn-primary btn-lg btn-block">Quero essa solução gratuitamente</button>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Quero essa solução gratuitamente</button>
               </div>
             </form>
           </div>
@@ -139,12 +137,8 @@
           
           <div class="container">
             <figure style="float: left">
-              <img src="../imagens/mao.png" style="width:400px; height:400px" alt="imagem mao aberta"/>
-              <!-- <img src="./imagens/mao.png" style="width:400px; height:400px" alt="imagem mao aberta"/>               -->
-              <!-- <img src="/imagens/mao.png" style="width:400px; height:400px" alt="imagem mao aberta"/>                             -->
-              <!-- <img src="imagens/mao.png" style="width:400px; height:400px" alt="imagem mao aberta"/>                             -->
-              <!-- <img src="mao.png" style="width:400px; height:400px" alt="imagem mao aberta"/>                                           -->
-              <p><a class="btn btn-primary btn-lg" href="/landinpage/saibamais.html" role="button">Saiba mais &raquo;</a></p>
+              <img src="imagens/mao.png" style="width:400px; height:400px" alt="imagem mao aberta"/>
+              <p><a class="btn btn-primary btn-lg" href="saibamais.html" role="button">Saiba mais &raquo;</a></p>
               <!-- <p><a class="btn btn-primary btn-lg" href="#saibamais" role="button">Saiba mais &raquo;</a></p>               -->
             </figure>
           </div>
